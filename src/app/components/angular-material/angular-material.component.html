@@ -1,0 +1,27 @@
+<button mat-flat-button class="click">Click me!</button>
+<button mat-raised-button class="click">Text</button>
+<button mat-icon-button>Icon</button>
+<button mat-fab>Button</button>
+
+<!-- Button toggle -->
+<br />
+<mat-button-toggle #toggleBtn checked disabled>Toggle</mat-button-toggle>
+{{ toggleBtn.checked }}
+<!-- Button group -->
+<br />
+<mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+  <mat-button-toggle value="angular">Angular</mat-button-toggle>
+  <mat-button-toggle value="react">React</mat-button-toggle>
+  <mat-button-toggle value="next">Next</mat-button-toggle>
+  <mat-button-toggle value="vue">Vue</mat-button-toggle>
+</mat-button-toggle-group>
+{{ toggleGroup.value }}
+
+<!-- Icon -->
+<br />
+<mat-icon>Physical prototype</mat-icon>
+
+<!-- Badge -->
+<span matBadge="5">Notification</span><br />
+<span matBadge="5" matBadgePosition="below before">Notification</span><br />
+<span matBadge="5">Notification</span><br />

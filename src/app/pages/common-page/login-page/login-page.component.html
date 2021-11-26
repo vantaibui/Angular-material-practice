@@ -1,0 +1,75 @@
+<!-- <form #formLogin="ngForm" (ngSubmit)="onLogin(formLogin)">
+  <div class="form-group">
+    <label for="username">Tên tài khoản: </label>
+    <input
+      type="text"
+      name="username"
+      class="form-control"
+      placeholder="Nhập tên tài khoản ..."
+      [(ngModel)]="user.username"
+      #username
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">Mật khẩu: </label>
+    <input
+      type="password"
+      name="password"
+      class="form-control"
+      placeholder="Nhập mật khẩu ..."
+      [ngModel]="user.password"
+      (ngModelChange)="user.password = $event"
+      #password
+    />
+  </div>
+  <button type="submit" mat-raised-button color="primary">Đăng nhập</button>
+</form> -->
+
+<section class="login-section">
+  <div class="imgBx">
+    <img src="../../../../assets/images/commons/login.jpg" alt="image" />
+  </div>
+  <div class="contentBx">
+    <div class="formBx">
+      <h2>Login</h2>
+      <form #formLogin="ngForm" (ngSubmit)="onLogin(formLogin)">
+        <div class="inputBx">
+          <span>Tên tài khoản</span>
+          <input
+            type="text"
+            name="username"
+            [(ngModel)]="user.username"
+            #username
+          />
+        </div>
+        <div class="inputBx">
+          <span>Mật khẩu</span>
+          <input
+            type="text"
+            name="password"
+            [ngModel]="user.password"
+            (ngModelChange)="user.password = $event"
+            #password
+          />
+        </div>
+        <div class="remember">
+          <label for="remember"><input type="checkbox" />Remember</label>
+        </div>
+        <div class="inputBx">
+          <button type="submit">Đăng nhập</button>
+        </div>
+        <div class="inputBx">
+          <p>
+            Don't have a account? <a [routerLink]="['/register']">Đăng ký</a>
+          </p>
+        </div>
+      </form>
+      <div class="social-media">
+        <h3>Login with social media</h3>
+        <ul class="social">
+          <li><img src="" alt="" /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
