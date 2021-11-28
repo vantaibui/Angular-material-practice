@@ -22,8 +22,8 @@ import { AngularMaterialComponent } from './components/angular-material/angular-
 import { LoginPageComponent } from './pages/common-page/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/common-page/register-page/register-page.component';
 import { NotFoundPageComponent } from './pages/common-page/not-found-page/not-found-page.component';
-import { AuthService } from './services/auth.service';
-import { ProductService } from './services/product/product.service';
+import { AuthService } from './apis/auth/auth.service';
+import { ProductService } from './apis/product/product.service';
 
 @NgModule({
   declarations: [

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 // Model
-import { User } from '../models/User';
+import { User } from 'src/app/models/User';
 
 @Injectable({
   providedIn: 'root',
@@ -29,7 +29,6 @@ export class AuthService {
       gender: user.gender,
       phone: user.phone,
       birthday: user.birthday,
-      status: true,
     };
     return this.http.post<User>(`${this.apiUrl}/register`, userRegister);
   }

@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
 import { User } from 'src/app/models/User';
 
 // Service
-import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from 'src/app/apis/auth/auth.service';
 
 @Component({
   selector: 'app-login-page',

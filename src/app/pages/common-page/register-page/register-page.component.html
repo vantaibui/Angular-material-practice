@@ -1,23 +1,59 @@
-<form [formGroup]="formRegister" (ngSubmit)="onRegister()">
-  <div class="form-group">
-    <label for="username">Tên tài khoản: </label>
-    <input
-      type="text"
-      name="username"
-      class="form-control"
-      placeholder="Nhập tên tài khoản ..."
-      formControlName="username"
-    />
+<section class="login-section register-section">
+  <div class="imgBx">
+    <img src="../../../../assets/images/commons/login.jpg" alt="image" />
   </div>
-  <div class="form-group">
-    <label for="password">Mật khẩu: </label>
-    <input
-      type="password"
-      name="password"
-      class="form-control"
-      placeholder="Nhập mật khẩu ..."
-      formControlName="password"
-    />
+  <div class="contentBx">
+    <div class="formBx">
+      <h2>Login</h2>
+      <form [formGroup]="formRegister" (ngSubmit)="onRegister()">
+        <div class="form-group">
+          <div class="inputBx">
+            <span>Tên tài khoản</span>
+            <input type="text" name="username" formControlName="username" />
+          </div>
+          <div class="inputBx">
+            <span>Mật khẩu</span>
+            <input type="password" name="password" formControlName="password" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="inputBx">
+            <span>Họ</span>
+            <input type="text" name="firstName" formControlName="firstName" />
+          </div>
+          <div class="inputBx">
+            <span>Tên</span>
+            <input type="text" name="lastName" formControlName="lastName" />
+          </div>
+        </div>
+
+        <div class="inputBx">
+          <span>Địa chỉ email</span>
+          <input type="text" name="email" formControlName="email" />
+        </div>
+        <div class="inputBx">
+          <span>Hình đại diện</span>
+          <input type="text" name="avatar" formControlName="avatar" />
+        </div>
+        <div class="inputBx">
+          <span>Giới tính</span>
+          <input type="text" name="gender" formControlName="gender" />
+        </div>
+        <div class="inputBx">
+          <span>Số điện thoại</span>
+          <input type="text" name="phone" formControlName="phone" />
+        </div>
+        <div class="inputBx">
+          <span>Ngày tháng năm sinh</span>
+          <input type="date" name="birthday" formControlName="birthday" />
+        </div>
+        <div class="inputBx">
+          <p>Already a member? <a [routerLink]="['/login']">Đăng nhập</a></p>
+        </div>
+        <div class="inputBx">
+          <button type="submit">Đăng ký</button>
+        </div>
+      </form>
+    </div>
   </div>
-  <button type="submit" mat-raised-button color="primary">Đăng ký</button>
-</form>
+</section>
