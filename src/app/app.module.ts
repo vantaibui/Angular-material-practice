@@ -24,6 +24,7 @@ import { RegisterPageComponent } from './pages/common-page/register-page/registe
 import { NotFoundPageComponent } from './pages/common-page/not-found-page/not-found-page.component';
 import { AuthService } from './apis/auth/auth.service';
 import { ProductService } from './apis/product/product.service';
+import { ActiveEffectDirective } from './directives/active-effect.directive';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProductService } from './apis/product/product.service';
     NotFoundPageComponent,
     LoginPageComponent,
     RegisterPageComponent,
+    ActiveEffectDirective,
   ],
   imports: [
     BrowserModule,
